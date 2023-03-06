@@ -12,3 +12,23 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+//Przy pomocy tablicy obiektów stworzyć elementy <img> wewątrz <li>
+//Utwożyć znacznik przy pomocy łancuchów szablonowych
+//Wszystkie elementy powinny być dodane do DOM w jednej operacji
+//Ulepszyć galerie używając flexboxsów lub gridów za pomocą klas css
+
+ 
+
+const gallery = document.querySelector('.gallery');
+
+const createGallery = images => {
+  const galleryItems = images.map(
+    image =>
+      `<li class="item"><img class="picture" src="${image.url}" alt="${image.alt}"></li>`,
+  ).join('');
+  gallery.insertAdjacentHTML('afterbegin', galleryItems);
+};
+
+createGallery(images);
