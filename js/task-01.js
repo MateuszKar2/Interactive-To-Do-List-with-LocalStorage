@@ -1,7 +1,9 @@
-//policzyC liczbę kategorii <li.item>
-//wprowadzić do wiersza poleceń liczbę kategorii
-//znaleźć tekst nagłówka elementu <h2> i liczbę elementów <li>
-//wprowadzić do wiersza poleceń
+//liczę LICZBĘ kategorii <li.item>
+//wprowadzam do wiersza poleceń LICZBĘ kategorii
+//ITERUJĘ za pomocą pętli forEach
+//ZNAJDUJĘ nagłówki i zwracam zawartość tekstową za pomocą ".textContent"
+//ZNAJDUJĘ i liczę liczbę elementów <li> za pomocą ".length"
+//wprowadzam do wiersza poleceń NAGŁÓWEJ i LICZBĘ elementów
 
 
 
@@ -20,3 +22,7 @@ items.forEach(item => {
   console.log(`Category: ${title}
   Elements: ${elements}`);
 });
+
+
+ 
+
