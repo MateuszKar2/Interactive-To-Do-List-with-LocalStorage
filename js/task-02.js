@@ -7,12 +7,15 @@ const ingredients = [
   'Condiments',
 ];
 
-//mam elementy tablicy
-//do każdego elementu tablicy dodac oddzielny element <li> 
-//dodać nazwę elementu jako zawartość tekstową
+//mam tablicę ciągów
+//w HTML mam pustą listę <ul id="ingredients"></ul>
+// przy pomocy metody .map
+//do każdego elementu tablicy utworzę oddzielny element <li> 
+//użyć metody document.createElement()
+//dodać nazwę elementu (string z tablicy) jako zawartość tekstową <li>
 //dodać do elementu klasę .item
-//dodać wszystkie elementy <li> na liście podczas jednej operacji
-
+//umieścić wszystkie elementy <li> na liście <ul> podczas jednej operacji
+//dołączam za pomocą metody .append
 
 const ingredientsList = document.querySelector(`#ingredients`);
 
@@ -27,4 +30,5 @@ const items = ingredients.map(ingredient => {
 console.log(items);
 
 ingredientsList.append(...items);
+ 
  
