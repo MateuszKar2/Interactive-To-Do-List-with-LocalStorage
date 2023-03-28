@@ -1,6 +1,8 @@
 //Napisać skrypt
-//Który przy wpisywaniu tekstu w pole input wstawia jego aktualną wartość
-//Jeżeli pole jest puste powinnien wyswietlić sie komunikat "Anonymous"
+//Który przy wpisywaniu tekstu w pole "input" 
+//wstawia jego aktualną wartość do pola "output"
+//Jeżeli pole "input" jest puste 
+//w "output" powinna być wartość "Anonymous"
 
 
 const textInput = document.querySelector('#name-input');
@@ -14,3 +16,4 @@ function clickInputChange(e) {
     textOutput.textContent = 'Anonymous';
   }
 }
+ 
