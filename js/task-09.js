@@ -6,8 +6,9 @@ function getRandomHexColor() {
 
 
 //skrypt który zmienia kolor elementu body
-//poprzez style inline po kliknięciu na button.change-color
-//wprowadza wartość koloru do span.color
+//(poprzez style inline) po kliknięciu na button.change-color
+//wyświetla wartość koloru w span.color
+//Aby wygenerować losowy kolor użyć funkcji "getRandomHexColor".
 
 const mainColor = document.querySelector("body");
 const clickColor = document.querySelector('.change-color');
@@ -20,3 +21,6 @@ clickColor.addEventListener("click", (e) => {
   mainColor.style.backgroundColor = randomColor;
   changeColor.textContent = randomColor;
 });
+
+
+ 
