@@ -1,8 +1,8 @@
 //napisać skrypt zarządzający formularzem logowania
 //opracowanie przesłania formularza form.login-form zgodnie ze zdarzeniem submit
-//podczas przesyłania strona nie powinna się restartować
+//podczas przesyłania strona nie powinna się odswieżać
 //nie uzupełnione pole mają zawierać alert przypominający o uzupełnieniu
-//po wysłaniu formularza przez użytkownika zbieram wartość pól jako obiekt
+//po wysłaniu formularza przez użytkownika pobieram wartości pól jako obiekt
 //gdzie nazwą pola będzie nazwa właściwości
 //wartością pola- wartość właściwości
 //dostęp do elementów formularza za pomocą właściwości elements
@@ -27,3 +27,5 @@ formLogin.addEventListener('submit', e => {
             alert('all fields should be completed');
         }
 });
+
+ 
