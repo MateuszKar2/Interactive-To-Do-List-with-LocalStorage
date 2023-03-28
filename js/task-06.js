@@ -1,6 +1,6 @@
 //napisać skrypt któy przy utracie focusu na pole input
-//sprawdza jego zawartość na prawidłową liczbę symboli
-//liczba symboli znajduje się w atrybucie data-length
+//sprawdza czy wartość wprowadzona przez użytkownika ma odpowiednią długość
+//informacja o liczbie symboli znajduje się w atrybucie data-length
 //jeśli liczba symboli się zgadza border staje się zielony(valid)
 //a jeżeli nie jest czerwony(invalid)
 
@@ -19,3 +19,4 @@ textInput.addEventListener('blur', event => {
         textInput.classList.remove('valid');
     }
 });
+ 
