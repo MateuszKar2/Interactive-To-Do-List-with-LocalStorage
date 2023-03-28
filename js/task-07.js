@@ -1,8 +1,7 @@
 //napisać skrypt
-// który reaguje na zmianę wartości input#font-size-control"
-//zmienia styl inline span#text
-//aktualizuje właściwość font-size
-//podczas przesuwania paska bedzie się zmieniał rozmiar tekstu
+// który reaguje na zmianę wartości input#font-size-control" 
+//poprzez zmianę stylu inline span#text, aktualizując właściwość font-size
+//podczas przesuwania suwaka bedzie się zmieniał rozmiar tekstu
 
 
 const changeValue = document.querySelector('#font-size-control');
@@ -15,3 +14,6 @@ const textResizing = () => {
 };
 
 changeValue.addEventListener('input', textResizing);
+
+
+ 
