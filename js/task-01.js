@@ -7,6 +7,9 @@
 // ZNAJDUJĘ i liczę liczbę elementów <li> za pomocą ".length"
 // wprowadzam do wiersza poleceń NAGŁÓWEJ i LICZBĘ elementów
  
+
+
+
 const amount = document.querySelector('#categories');
 const items = document.querySelectorAll('.item');
 
