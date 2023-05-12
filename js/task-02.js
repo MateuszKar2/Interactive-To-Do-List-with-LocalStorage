@@ -17,6 +17,8 @@ const ingredients = [
 //umieścić wszystkie elementy <li> na liście <ul> podczas jednej operacji
 //dołączam za pomocą metody .append
 
+
+
 const ingredientsList = document.querySelector(`#ingredients`);
 
 const items = ingredients.map(ingredient => {
