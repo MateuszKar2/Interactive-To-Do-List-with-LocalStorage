@@ -24,15 +24,18 @@ const images = [
  
 const gallery = document.querySelector('.gallery');
 
-
 const createGallery = images => {
-const galleryItems = images.map(image => 
-  `<li class="item"><img class="picture" src="${image.url}" alt="${image.alt}"></li>` ,
-);
-  gallery.insertAdjacentHTML('afterbegin', galleryItems.join(''));
-  };
+  const galleryItems = images.map(image => 
 
-  createGallery(images);
+  `<li class="item"><img class="picture" src="${image.url}" alt="${image.alt}"/></li>`,
+  );
+    gallery.insertAdjacentHTML('afterbegin', galleryItems.join(''));
+  };
+createGallery(images);
+
+
+
+
 
 
 
