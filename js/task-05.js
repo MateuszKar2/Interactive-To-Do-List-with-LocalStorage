@@ -5,6 +5,9 @@
 //w "output" powinna być wartość "Anonymous"
 
 
+
+
+
 const textInput = document.querySelector('#name-input');
 const textOutput = document.querySelector('#name-output');
 
