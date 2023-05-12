@@ -8,6 +8,7 @@
 //aktualizacja interfejsu(widok HTML) nową wartością zmiennej "counterValue"
 //po każdej jej zmianie
 
+
 const decrementBtn = document.querySelector('[data-action="decrement"]');
 const incrementBtn = document.querySelector('[data-action="increment"]');
 const value = document.querySelector('#value');
@@ -23,6 +24,7 @@ incrementBtn.addEventListener('click', () => {
   counterValue += 1;
   value.textContent = counterValue;
 });
+
 
 
 
