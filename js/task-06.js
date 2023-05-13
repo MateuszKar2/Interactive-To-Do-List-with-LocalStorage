@@ -1,8 +1,11 @@
-//napisać skrypt któy przy utracie focusu na pole input
+//napisać skrypt który przy utracie focusu na pole input
 //sprawdza czy wartość wprowadzona przez użytkownika ma odpowiednią długość
 //informacja o liczbie symboli znajduje się w atrybucie data-length
 //jeśli liczba symboli się zgadza border staje się zielony(valid)
 //a jeżeli nie jest czerwony(invalid)
+//korzystam z .addEventListener do obsługi zdarzenia
+//
+
 
 const textInput = document.querySelector('#validation-input');
 
