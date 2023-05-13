@@ -1,12 +1,12 @@
  
 //mam licznik, składający się z elem. span i przycisków
-//które po kliknięciu powinny zwiększać/zmniejszać się o jednostkę
-//utworzę zmienną "counterValue"
-//w któej bedzie przechowywana aktualna wartość licznika
-//nadam jej wartość początkową 0
-//dodać click listeners do przycisków, zwiekszając i zmniejszając wartość licznika
-//aktualizacja interfejsu(widok HTML) nową wartością zmiennej "counterValue"
-//po każdej jej zmianie
+//które po kliknięciu powinny zmniejszać/zwiększać się o jednostkę
+//utworzę zmienną pomocniczą "counterValue" z aktualną wartością licznika tj."0"
+//dodaje detektor zdarzenia .addEventListener
+//pierwszym argumentem będzie "click" - moja nazwa zdarzenia
+//drugim funkcja callback, 
+//której przkazuje aby zmieniała warość "counterValue"(-=1/ +=1)
+//oraz zapisywała wartość "counterValue" w zmiennej "value"
 
 
 const decrementBtn = document.querySelector('[data-action="decrement"]');
@@ -14,6 +14,8 @@ const incrementBtn = document.querySelector('[data-action="increment"]');
 const value = document.querySelector('#value');
 
 let counterValue = 0;
+
+
 
 decrementBtn.addEventListener('click', () => {
   counterValue -= 1;
@@ -24,6 +26,22 @@ incrementBtn.addEventListener('click', () => {
   counterValue += 1;
   value.textContent = counterValue;
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
