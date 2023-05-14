@@ -1,14 +1,13 @@
+//mam funkcje pomocniczą do generowania losowego koloru
+//tworze zdarzenie na click
+//przypisuje mojej zmiennej funkcje losowego koloru
+//wstawiam background i text do html
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
 
-
-//skrypt który zmienia kolor elementu body
-//(poprzez style inline) po kliknięciu na button.change-color
-//wyświetla wartość koloru w span.color
-//Aby wygenerować losowy kolor użyć funkcji "getRandomHexColor".
 
 const mainColor = document.querySelector("body");
 const clickColor = document.querySelector('.change-color');
