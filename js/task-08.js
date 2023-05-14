@@ -1,18 +1,16 @@
-//napisać skrypt zarządzający formularzem logowania
-//opracowanie przesłania formularza form.login-form zgodnie ze zdarzeniem submit
-//podczas przesyłania strona nie powinna się odswieżać
-//nie uzupełnione pole mają zawierać alert przypominający o uzupełnieniu
-//po wysłaniu formularza przez użytkownika pobieram wartości pól jako obiekt
-//gdzie nazwą pola będzie nazwa właściwości
-//wartością pola- wartość właściwości
-//dostęp do elementów formularza za pomocą właściwości elements
-//obiekt umieszczam w wierszu poleceń 
-//należy wyczyścić wartość pól formularza za pomocą reset
+//ustawiam zdarzenie submit
+//za pomocą prevent Default strona nie będzie się odświerzać
+//korzystam z interfejsu formData aby zakokowac dane i pobrać dane jako obiekt
+//wykorzystuję pętle for, literując po elementach
+//jeżeli imie się zgadza
+//wtedy przy prawidłowo podanym emailu i hasle loguje się do "obiektu"
+//wykorzystuje rest do zresetowania pół
+//jeżeli nie wszystkie pola zostaną wypołnione pojawia się alert :)
 
 
 const formLogin = document.querySelector('.login-form');
 
-formLogin.addEventListener('submit', e => {
+formLogin.addEventListener('submit', event => {
     e.preventDefault();
     const formData = {};
     for (const element of formLogin.elements) {
@@ -22,10 +20,11 @@ formLogin.addEventListener('submit', e => {
     }
         if (formData.email && formData.password) {
             console.log(formData);
-            formLogin.reset();
+            formData.reset();
         } else {
             alert('all fields should be completed');
         }
 });
+
 
  
