@@ -4,6 +4,22 @@
 //podczas przesuwania suwaka bedzie się zmieniał rozmiar tekstu
 
 
+const input = document.querySelector('#font-size-control');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const changeValue = document.querySelector('#font-size-control');
 const onText = document.querySelector('#text');
 
