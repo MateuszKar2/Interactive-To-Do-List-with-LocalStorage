@@ -1,6 +1,7 @@
-//tworzę zależność między wielkością liter a przesuwanym suwakiem
+//tworzę zależność między "changeValue"/"onText"
 //korzystam z funkcji pomocniczej 
 //ustawiam zdarzenie input, jaki drugi argument przekazująć f.pomocniczą
+
 
 const changeValue = document.querySelector('#font-size-control');
 const onText = document.querySelector('#text');
