@@ -1,11 +1,9 @@
 
-//korzystam z .addEventListener do obsługi zdarzenia
-//zdarzenie blur(utrata focusu na pole input)
-//sprawdzić czy wartość wprowadzona przez użytkownika spełnia warunek walidacji
-//ustawiam zdarzenie blur na zmienną(value) o znanej długości (length) 
-//jeżeli liczba znaków zgadza się z powyższym to dadaje klasę 'valid' (zielony)
-//jeżęli nie, otrzymuje klasę 'invalid' (czerwony)
-
+//korzystam z .addEventListener do obsługi zdarzenia blur
+//wykorzystuje operator if-else
+//jeżeli długość równa się wartość z data-length
+//dodaje klasę .valid, jeżeli nie
+//klasę .invalid
 
 
 const textInput = document.querySelector('#validation-input');
