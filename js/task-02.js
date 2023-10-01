@@ -6,7 +6,6 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-
 //mam tablicę ciągów
 //w HTML mam pustą listę <ul id="ingredients"></ul>
 // przy pomocy metody .map
